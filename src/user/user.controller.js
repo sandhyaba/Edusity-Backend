@@ -31,7 +31,7 @@ const list = async (req, res) => {
         }
         return Helper.success(res, "user request found", list)
     }
-    catch {
+    catch(error) {
         console.error(error)
     }
 }

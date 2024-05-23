@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // mongoose.connect('mongodb://127.0.0.1:27017/Edusity')
 //   .then(() => console.log('Connected!'));
-const uri = "mongodb+srv://baisa007:baisa007@cluster0.xp1qy5z.mongodb.net/"
+const uri = "mongodb+srv://baisa007:baisa007@cluster0.bc5uahx.mongodb.net/"
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true

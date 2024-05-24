@@ -6,7 +6,7 @@ const uri = "mongodb+srv://baisa007:baisa007@cluster0.bc5uahx.mongodb.net/"
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  serverSelectionTimeoutMS: 5000,  // Adjust the timeout value as needed
+  serverSelectionTimeoutMS: 30000,  // Adjust the timeout value as needed
   socketTimeoutMS: 45000,          // Optional: Ensure socket timeout is appropriate
   // More options if needed
 }).then(() => {

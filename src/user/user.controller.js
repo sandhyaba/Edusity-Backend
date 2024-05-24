@@ -37,4 +37,14 @@ const list = async (req, res) => {
     }
 }
 
-module.exports = { reportUserRequest, list } 
+const Example = async (req, res) => {
+    try {
+        const user = "Hello, I am server on Node"
+        return Helper.success(res, " ",  user)
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+
+module.exports = { reportUserRequest, list, Example } 

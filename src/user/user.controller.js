@@ -25,6 +25,7 @@ const reportUserRequest = async (req, res) => {
 
 const list = async (req, res) => {
     try {
+        console.log("Hello from Sandhya");
         const list = await UserModel.find().select({ updatedAt: 0, __v: 0})
         if (!list) {
             return Helper.fail(res, "user request not found")

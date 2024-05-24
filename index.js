@@ -13,6 +13,7 @@ app.use(cors());
 app.post("/v1/user/message/add", UserController.reportUserRequest)
 app.get("/v1/user/message/list", UserController.list)
 app.post("/v1/user/contact/form", ContactController.contactForm)
+app.get("/", UserController.Example)
 
 app.listen(process.env.PORT || 6500, function () {
     console.log('App running on port ' + (process.env.PORT || 6500))
